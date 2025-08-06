@@ -1,0 +1,36 @@
+body {
+  background-color: #fef6f0;
+}
+body h1 {
+  color: #b4202a;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 80px;
+  /*text-shadow:
+  -1px -1px 0 #421010,
+   1px -1px 0 #421010,
+  -1px  1px 0 #421010,
+   1px  1px 0 #421010; */
+}
+body .menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans serif;
+  margin-top: 50px;
+  list-style: none;
+  padding-left: 0%;
+}
+body a {
+  text-decoration: none;
+  color: #421010;
+  transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+}
+body a:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  margin: none;
+}/*# sourceMappingURL=style.css.map */

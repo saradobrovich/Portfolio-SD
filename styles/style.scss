@@ -1,0 +1,41 @@
+$bgcolor: #fef6f0;
+$accentcolor: #b4202a;
+$textcolor: #421010;
+$lighaccentcolor: #ffd1b9;
+$fonttitle: "Frank Ruhl Libre", serif;
+
+body {
+    background-color: $bgcolor;
+    h1 {
+        color: $accentcolor;
+        font-family: $fonttitle;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 80px;
+        /*text-shadow:
+        -1px -1px 0 #421010,
+         1px -1px 0 #421010,
+        -1px  1px 0 #421010,
+         1px  1px 0 #421010; */
+    }
+    .menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans serif;
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0%;
+}
+a {
+    text-decoration: none;
+    color: $textcolor;
+    transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+    &:hover {
+        text-decoration: underline 2px;
+        margin: none;
+    }
+}
+}
