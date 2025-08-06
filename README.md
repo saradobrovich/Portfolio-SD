@@ -1,1 +1,1 @@
-Il mio primo sito portfolio per i miei lavori
+Il mio primo sito portfolio personale
