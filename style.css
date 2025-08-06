@@ -11,16 +11,16 @@ body {
 
 h1 {
     color: var(--accent);
-    font-family: "Playfair Display", serif;
-    weight: bold;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 900;
     text-align: center;
     margin-top: 50px;
     font-size: 80px;
-    text-shadow:
+    /*text-shadow:
     -1px -1px 0 #421010,
      1px -1px 0 #421010,
     -1px  1px 0 #421010,
-     1px  1px 0 #421010;
+     1px  1px 0 #421010; */
 }
 
 .menu {
