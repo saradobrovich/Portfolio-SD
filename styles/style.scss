@@ -6,6 +6,7 @@ $yellowcolor: #E9B772;
 $greencolor: #93AC5D;
 $bluecolor: #6E9BAF;
 $fonttitle: "Frank Ruhl Libre", serif;
+$fonttext: "Inter", sans-serif;
 
 body {
     background-color: $bgcolor;
@@ -27,13 +28,14 @@ body {
     justify-content: center;
     gap: 50px;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans serif;
     margin-top: 50px;
     list-style: none;
     padding-left: 0%;
 }
 a {
     text-decoration: none;
+    font-family: $fonttext;
+    letter-spacing: 5px;
     color: $textcolor;
     transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
     &:hover {
