@@ -30,7 +30,7 @@ body {
 .menu-link {
   text-decoration: none;
   font-family: $fonttext;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   color: $textcolor;
   transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
   &:hover {
@@ -47,6 +47,7 @@ h1 {
   text-align: left;
   margin-top: 50px;
   margin-left: 120px;
+  margin-bottom: 0px;
   font-size: 80px;
   z-index: 1;
   position: relative;
@@ -64,11 +65,10 @@ h1 {
   color: $textcolor;
   text-align: left;
   margin-left: 120px;
-  margin-top: -20px;
   margin-right: 620px;
   max-width: 600px;
   line-height: 1.6;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   z-index: 1;
   position: relative;
 }
@@ -88,4 +88,22 @@ strong {
   border-radius: 16px;
 }
 
-// --- Bottone ---
+// --- Bottone chi sono ---
+.chi-sono-contatti {
+  font-family: $fonttext;
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $accentcolor;
+  background-color: transparent;
+  border: 4px solid $accentcolor;
+  border-radius: 10px;
+  margin-left: 120px;
+  margin-top: 20px;
+  &:hover {
+    background-color: $accentcolor;
+    color: $bgcolor;
+    cursor: pointer;
+  }
+}
