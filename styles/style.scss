@@ -26,6 +26,18 @@ body {
   list-style: none;
   padding-left: 0%;
 }
+// --- Link ---
+.menu-link {
+  text-decoration: none;
+  font-family: $fonttext;
+  letter-spacing: 1.5px;
+  color: $textcolor;
+  transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+  &:hover {
+    text-decoration: underline 2px;
+    margin: none;
+  }
+}
 
 // --- Titolo ---
 h1 {
@@ -66,25 +78,14 @@ strong {
   font-weight: 600;
 }
 
-// --- Link ---
-a {
-  text-decoration: none;
-  font-family: $fonttext;
-  letter-spacing: 1.5px;
-  color: $textcolor;
-  transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
-  &:hover {
-    text-decoration: underline 2px;
-    margin: none;
-  }
-}
-
 // --- Immagine profilo ---
 .foto-profilo {
   position: absolute;
   width: 500px;
   left: 600px;
-  top: 120px;
+  top: 70px;
   z-index: 0;
   border-radius: 16px;
 }
+
+// --- Bottone ---
