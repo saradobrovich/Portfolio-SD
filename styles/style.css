@@ -14,14 +14,13 @@ body {
 }
 
 .menu-link {
-  text-decoration: none;
   font-family: "Inter", sans-serif;
-  letter-spacing: 1px;
   color: #281515;
   transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
 }
 .menu-link:hover {
-  text-decoration: underline 2px;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
   margin: none;
 }
 
@@ -29,7 +28,6 @@ h1 {
   color: #B34246;
   font-family: "DM Serif Text", serif;
   font-weight: 900;
-  letter-spacing: 1px;
   text-align: left;
   margin-top: 50px;
   margin-left: 120px;
@@ -49,10 +47,13 @@ h2 {
   color: #B34246;
   text-align: center;
   font-size: 32px;
-  letter-spacing: 1px;
 }
 
 .chi-sono {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #281515;
@@ -99,9 +100,10 @@ button:hover {
 
 .valori {
   background-color: #B34246;
+  padding-top: 80px;
   padding-left: 120px;
   padding-right: 120px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   margin-top: 120px;
   position: relative;
   z-index: 1;
@@ -116,14 +118,34 @@ button:hover {
 
 .valori-text {
   font-family: "Inter", sans-serif;
-  text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 1.6;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   color: #fef6f0;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 80px;
+  max-width: 1200px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
+}
+
+.link-yt {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #fef6f0;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.link-yt:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .piuma-bg {
@@ -139,8 +161,18 @@ button:hover {
 .yt {
   width: 300px;
   border-radius: 16px;
-  align-: center;
   margin: 0 20px;
 }
+.yt:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
 
-/*# sourceMappingURL=style.css.map */
+.yt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */

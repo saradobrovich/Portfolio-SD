@@ -8,6 +8,14 @@ $bluecolor: #6E9BAF;
 $fonttitle: "DM Serif Text", serif;
 $fonttext: "Inter", sans-serif;
 
+// --- Font Text ---
+@mixin font-text {
+  font-family: $fonttext;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
 // --- Body ---
 body {
   background-color: $bgcolor;
@@ -26,9 +34,7 @@ body {
 }
 // --- Link ---
 .menu-link {
-  text-decoration: none;
   font-family: $fonttext;
-  letter-spacing: 1px;
   color: $textcolor;
   transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
   &:hover {
@@ -42,7 +48,6 @@ h1 {
   color: $accentcolor;
   font-family: $fonttitle;
   font-weight: 900;
-  letter-spacing: 1px;
   text-align: left;
   margin-top: 50px;
   margin-left: 120px;
@@ -61,11 +66,11 @@ h2 {
   color: $accentcolor;
   text-align: center;
   font-size: 32px;
-  letter-spacing: 1px;
 }
 
 // --- Paragrafo chi sono ---
 .chi-sono {
+  @include font-text;
   font-family: $fonttext;
   font-size: 18px;
   color: $textcolor;
@@ -116,10 +121,11 @@ button {
 // --- Valori ---
 .valori {
   background-color: $accentcolor;
+  padding-top: 80px;
   padding-left: 120px;
   padding-right: 120px;
-  padding-bottom: 20px;
-  margin-top: 120px;
+  padding-bottom: 80px;
+  margin-top: 120px; // da sistemare tutte le varie sezioni con div, per uno spazio giusto
   position: relative;
   z-index: 1;
 }
@@ -130,15 +136,28 @@ button {
   padding-top: 50px;
 }
 .valori-text {
-  font-family: $fonttext;
+  @include font-text;
+  display: block;
+  margin: 0 auto;
   text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 1.6;
   color: $bgcolor;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 80px;
+  max-width: 1200px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
+}
+.link-yt {
+  @include font-text;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: $bgcolor;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 .piuma-bg {
   z-index: 0;
@@ -153,4 +172,16 @@ button {
   width: 300px;
   border-radius: 16px;
   margin: 0 20px; // spazio orizzontale tra tutte le immagini
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+  }
+}
+.yt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
