@@ -1,3 +1,4 @@
+// --- Variabili colori e font ---
 $bgcolor: #fef6f0;
 $bgcolor2: #F4DBB9;
 $accentcolor: #B34246;
@@ -5,42 +6,85 @@ $textcolor: #281515;
 $yellowcolor: #E9B772;
 $greencolor: #93AC5D;
 $bluecolor: #6E9BAF;
-$fonttitle: "Frank Ruhl Libre", serif;
+$fonttitle: "DM Serif Text", serif;
 $fonttext: "Inter", sans-serif;
 
+// --- Body ---
 body {
-    background-color: $bgcolor;
-    h1 {
-        color: $accentcolor;
-        font-family: $fonttitle;
-        font-weight: 900;
-        text-align: center;
-        margin-top: 50px;
-        font-size: 80px;
-        /*text-shadow:
-        -1px -1px 0 #421010,
-         1px -1px 0 #421010,
-        -1px  1px 0 #421010,
-         1px  1px 0 #421010; */
-    }
-    .menu {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    text-decoration: none;
-    margin-top: 50px;
-    list-style: none;
-    padding-left: 0%;
+  background-color: $bgcolor;
+  position: relative;
 }
+
+// --- Navigazione ---
+.menu {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  gap: 50px;
+  text-decoration: none;
+  margin-top: 50px;
+  list-style: none;
+  padding-left: 0%;
+}
+
+// --- Titolo ---
+h1 {
+  color: $accentcolor;
+  font-family: $fonttitle;
+  font-weight: 900;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 120px;
+  font-size: 80px;
+  z-index: 1;
+  position: relative;
+  /*text-shadow:
+    -1px -1px 0 #421010,
+     1px -1px 0 #421010,
+    -1px  1px 0 #421010,
+     1px  1px 0 #421010; */
+}
+
+// --- Paragrafo chi sono ---
+.chi-sono {
+  font-family: $fonttext;
+  font-size: 18px;
+  color: $textcolor;
+  text-align: left;
+  margin-left: 120px;
+  margin-top: -20px;
+  margin-right: 620px;
+  max-width: 600px;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  z-index: 1;
+  position: relative;
+}
+
+// --- Strong ---
+strong {
+  font-weight: 600;
+}
+
+// --- Link ---
 a {
-    text-decoration: none;
-    font-family: $fonttext;
-    letter-spacing: 5px;
-    color: $textcolor;
-    transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
-    &:hover {
-        text-decoration: underline 2px;
-        margin: none;
-    }
+  text-decoration: none;
+  font-family: $fonttext;
+  letter-spacing: 1.5px;
+  color: $textcolor;
+  transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+  &:hover {
+    text-decoration: underline 2px;
+    margin: none;
+  }
 }
+
+// --- Immagine profilo ---
+.foto-profilo {
+  position: absolute;
+  width: 500px;
+  left: 600px;
+  top: 120px;
+  z-index: 0;
+  border-radius: 16px;
 }
