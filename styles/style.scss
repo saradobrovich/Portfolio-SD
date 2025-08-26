@@ -32,18 +32,26 @@ body {
 .menu {
   display: flex;
   font-size: 18px;
+  width: 100vw;
   justify-content: center;
   gap: 72px;
   text-decoration: none;
-  margin-top: 62px;
-  margin-bottom: 62px;
+  padding: 42px 0px;
   list-style: none;
   padding-left: 0%;
+  z-index: 100;
+  position: fixed;
+  top: -20px;
+  left: 0;
+  background: $bgcolor;
+  border-bottom: 4px double #B34246;
+  /* box-shadow: 2px 2px 10px rgb(179, 66, 70); */
 }
 
 .menu-link {
   font-family: $fonttext;
-  color: $textcolor;
+  font-weight: 500;
+  color: $accentcolor;
   text-decoration: none;
   transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
   &:hover {
@@ -80,6 +88,7 @@ h2 {
 .chi-sono { /* contenitore chi sono */
   position: relative;
   margin: 120px 164px;
+  margin-top: 240px;
 }
 
 .chi-sono-text {
@@ -132,7 +141,7 @@ h2 {
   font-weight: 900;
   color: $accentcolor;
   background-color: transparent;
-  border: 4px solid $accentcolor;
+  border: 3px solid $accentcolor;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -190,6 +199,7 @@ h2 {
 .yt {
   width: 300px;
   border-radius: 16px;
+  border: 8px solid $bgcolor;
   margin: 0 20px; // spazio orizzontale tra tutte le immagini
   transition: transform 0.1s ease-in-out;
   &:hover {
