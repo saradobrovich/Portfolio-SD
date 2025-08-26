@@ -1,3 +1,7 @@
+strong {
+  font-weight: 600;
+}
+
 body {
   background-color: #fef6f0;
 }
@@ -6,9 +10,10 @@ body {
   display: flex;
   font-size: 18px;
   justify-content: center;
-  gap: 50px;
+  gap: 72px;
   text-decoration: none;
-  margin-top: 50px;
+  margin-top: 62px;
+  margin-bottom: 62px;
   list-style: none;
   padding-left: 0%;
 }
@@ -16,6 +21,7 @@ body {
 .menu-link {
   font-family: "Inter", sans-serif;
   color: #281515;
+  text-decoration: none;
   transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
 }
 .menu-link:hover {
@@ -28,11 +34,7 @@ h1 {
   color: #B34246;
   font-family: "DM Serif Text", serif;
   font-weight: 900;
-  text-align: left;
-  margin-top: 50px;
-  margin-left: 120px;
-  margin-bottom: 0px;
-  font-size: 80px;
+  font-size: 94px;
   z-index: 1;
   position: relative;
   /*text-shadow:
@@ -49,50 +51,67 @@ h2 {
   font-size: 32px;
 }
 
-.chi-sono {
+.chi-sono { /* contenitore chi sono */
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: 164px;
+  margin-right: 164px;
+}
+
+.chi-sono-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 1.6;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #281515;
   text-align: left;
-  margin-left: 120px;
-  max-width: 400px;
+  max-width: 600px;
   line-height: 1.6;
   letter-spacing: 1px;
   z-index: 1;
   position: relative;
 }
 
-strong {
-  font-weight: 600;
-}
-
 .foto-profilo {
-  position: absolute;
-  width: 500px;
-  left: 600px;
-  top: 120px;
   z-index: 0;
   border-radius: 16px;
+  margin-top: -200px;
+  position: absolute;
+  max-height: 600px;
+  max-width: 40vw;
+  height: auto;
+  right: 0px;
 }
 
-button {
+@media (max-width: 900px) {
+  .foto-profilo {
+    position: static;
+    margin: 40px auto 0 auto;
+    display: block;
+    max-width: 80vw;
+    width: 100%;
+    height: auto;
+    right: auto;
+  }
+}
+.chi-sono-contatti {
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
   color: #B34246;
   background-color: transparent;
   border: 4px solid #B34246;
   border-radius: 10px;
-  margin-left: 120px;
   margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
-button:hover {
+.chi-sono-contatti:hover {
   background-color: #B34246;
   color: #fef6f0;
   cursor: pointer;
@@ -104,7 +123,7 @@ button:hover {
   padding-left: 120px;
   padding-right: 120px;
   padding-bottom: 80px;
-  margin-top: 120px;
+  margin-top: 240px;
   position: relative;
   z-index: 1;
 }
@@ -113,7 +132,7 @@ button:hover {
   font-family: "DM Serif Text", serif;
   color: #fef6f0;
   text-align: center;
-  padding-top: 50px;
+  margin-top: 0px;
 }
 
 .valori-text {
@@ -122,7 +141,7 @@ button:hover {
   letter-spacing: 1px;
   line-height: 1.6;
   display: block;
-  margin: 0 auto;
+  margin: 0 54px;
   text-align: center;
   color: #fef6f0;
   max-width: 1200px;
@@ -151,8 +170,8 @@ button:hover {
 .piuma-bg {
   z-index: 0;
   position: absolute;
-  width: 100px;
-  margin-top: -120px;
+  width: 120px;
+  margin-top: -100px;
   left: 50px;
   rotate: -10deg;
   opacity: 0.6;
