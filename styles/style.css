@@ -35,6 +35,7 @@ h1 {
   font-family: "DM Serif Text", serif;
   font-weight: 900;
   font-size: 94px;
+  margin-bottom: 0px;
   z-index: 1;
   position: relative;
   /*text-shadow:
@@ -48,15 +49,12 @@ h2 {
   font-family: "DM Serif Text", serif;
   color: #B34246;
   text-align: center;
-  font-size: 32px;
+  font-size: 54px;
 }
 
 .chi-sono { /* contenitore chi sono */
   position: relative;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  margin-left: 164px;
-  margin-right: 164px;
+  margin: 120px 164px;
 }
 
 .chi-sono-text {
@@ -73,6 +71,7 @@ h2 {
   letter-spacing: 1px;
   z-index: 1;
   position: relative;
+  margin: 2em 0;
 }
 
 .foto-profilo {
@@ -107,7 +106,6 @@ h2 {
   background-color: transparent;
   border: 4px solid #B34246;
   border-radius: 10px;
-  margin-top: 20px;
   position: relative;
   z-index: 1;
 }
@@ -119,10 +117,7 @@ h2 {
 
 .valori {
   background-color: #B34246;
-  padding-top: 80px;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 80px;
+  padding: 80px 220px;
   margin-top: 240px;
   position: relative;
   z-index: 1;
@@ -141,12 +136,10 @@ h2 {
   letter-spacing: 1px;
   line-height: 1.6;
   display: block;
-  margin: 0 54px;
   text-align: center;
   color: #fef6f0;
   max-width: 1200px;
-  /* margin-left: 60px;
-  margin-right: 60px; */
+  margin: 1em 0;
 }
 
 .link-yt {
@@ -160,7 +153,6 @@ h2 {
   color: #fef6f0;
   text-decoration: none;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 .link-yt:hover {
   text-decoration: underline;
@@ -171,7 +163,7 @@ h2 {
   z-index: 0;
   position: absolute;
   width: 120px;
-  margin-top: -100px;
+  margin-top: -180px;
   left: 50px;
   rotate: -10deg;
   opacity: 0.6;
@@ -194,4 +186,17 @@ h2 {
   align-items: center;
   margin-top: 40px;
   flex-wrap: wrap;
+}
+
+.portfolio {
+  margin: 120px 220px;
+  text-align: center;
+}
+
+.portfolio-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 1em 0;
 }/*# sourceMappingURL=style.css.map */
