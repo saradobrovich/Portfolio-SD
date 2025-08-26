@@ -76,7 +76,7 @@ h2 {
 
 .foto-profilo {
   z-index: 0;
-  border-radius: 16px;
+  border-radius: 24px;
   margin-top: -200px;
   position: absolute;
   max-height: 600px;
@@ -173,10 +173,10 @@ h2 {
   width: 300px;
   border-radius: 16px;
   margin: 0 20px;
+  transition: transform 0.1s ease-in-out;
 }
 .yt:hover {
   transform: scale(1.05);
-  transition: transform 0.1s ease-in-out;
   cursor: pointer;
 }
 
@@ -199,4 +199,161 @@ h2 {
   letter-spacing: 1px;
   line-height: 1.6;
   margin: 1em 0;
+}
+
+.cornice-rom { /* contentitore Romimmobiliare */
+  width: 1112px;
+  height: 427px;
+  max-width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.cornice-rom img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.cornice-rom img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cornice-rom-txt {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #fef6f0;
+  font-size: 28px;
+  text-align: left;
+  left: 40px;
+  bottom: 40px;
+  line-height: 0.5;
+  text-shadow: rgba(40, 21, 21, 0.8117647059) 2px 2px 4px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: left;
+}
+
+.cornice-s2i { /* contentitore Start2Impact */
+  width: 638px;
+  height: 427px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.cornice-s2i img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.cornice-s2i img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cornice-s2i-txt {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #fef6f0;
+  font-size: 28px;
+  text-align: left;
+  left: 40px;
+  bottom: 40px;
+  line-height: 0.5;
+  text-shadow: rgba(40, 21, 21, 0.8117647059) 2px 2px 4px;
+}
+
+.cornice-vc { /* contentitore Veracura */
+  width: 448px;
+  height: 427px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-left: 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cornice-vc img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.cornice-vc img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cornice-vc-txt {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #fef6f0;
+  font-size: 28px;
+  text-align: left;
+  left: 40px;
+  bottom: 40px;
+  line-height: 0.5;
+  text-shadow: rgba(40, 21, 21, 0.8117647059) 2px 2px 4px;
+}
+
+.cornice-mb { /* contentitore Merceria Butterfly */
+  width: 1112px;
+  height: 250px;
+  max-width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.cornice-mb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.cornice-mb img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cornice-mb-txt {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #fef6f0;
+  font-size: 28px;
+  text-align: left;
+  left: 40px;
+  bottom: 40px;
+  line-height: 0.5;
+  text-shadow: rgba(40, 21, 21, 0.8117647059) 2px 2px 4px;
 }/*# sourceMappingURL=style.css.map */
