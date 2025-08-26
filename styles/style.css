@@ -96,7 +96,7 @@ h2 {
     right: auto;
   }
 }
-.chi-sono-contatti {
+.button-contatti {
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
   padding: 10px;
@@ -109,7 +109,7 @@ h2 {
   position: relative;
   z-index: 1;
 }
-.chi-sono-contatti:hover {
+.button-contatti:hover {
   background-color: #B34246;
   color: #fef6f0;
   cursor: pointer;
@@ -198,7 +198,14 @@ h2 {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 1.6;
-  margin: 1em 0;
+  margin-bottom: 40px;
+}
+
+.portfolio-gallery { /* contenitore generale del portfolio */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
 }
 
 .cornice-rom { /* contentitore Romimmobiliare */
@@ -239,11 +246,11 @@ h2 {
   text-shadow: rgba(40, 21, 21, 0.8117647059) 2px 2px 4px;
 }
 
-.gallery {
+.gallery { /* contenitore galleria portfolio per S2I e VC */
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .cornice-s2i { /* contentitore Start2Impact */
@@ -327,10 +334,10 @@ h2 {
   border-radius: 24px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-content: center;
   position: relative;
-  margin-bottom: 6px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cornice-mb img {

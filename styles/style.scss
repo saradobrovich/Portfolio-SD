@@ -110,7 +110,7 @@ h2 {
   right: 0px;
 }
 
-// Responsive per schermi piccoli
+// Responsive per schermi piccoli /* fare media query per tutto il sito*/
 @media (max-width: 900px) {
   .foto-profilo {
     position: static;    // non più assoluta
@@ -124,7 +124,7 @@ h2 {
 }
 
 // --- Bottone chi sono ---
-.chi-sono-contatti {
+.button-contatti {
   font-family: $fonttext;
   letter-spacing: 1px;
   padding: 10px;
@@ -214,9 +214,15 @@ h2 {
 
 .portfolio-text {
   @include font-text;
-  margin: 1em 0;
+  margin-bottom: 40px;
 }
 
+.portfolio-gallery { /* contenitore generale del portfolio */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+}
 
 .cornice-rom { /* contentitore Romimmobiliare */ 
   width: 1112px;
@@ -253,11 +259,11 @@ h2 {
   text-shadow: #281515cf 2px 2px 4px;
 }
 
-.gallery {
+.gallery { /* contenitore galleria portfolio per S2I e VC */
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .cornice-s2i { /* contentitore Start2Impact */
@@ -291,7 +297,6 @@ h2 {
   line-height: 0.5;
   text-shadow: #281515cf 2px 2px 4px;
 }
-
 
 
 .cornice-vc { /* contentitore Veracura */
@@ -337,10 +342,10 @@ h2 {
   border-radius: 24px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-content: center;
   position: relative;
-  margin-bottom: 6px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cornice-mb img {
   width: 100%;
