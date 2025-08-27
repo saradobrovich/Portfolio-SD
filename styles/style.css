@@ -480,4 +480,17 @@ h2 {
   cursor: pointer;
 }
 
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.logo img {
+  max-width: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */

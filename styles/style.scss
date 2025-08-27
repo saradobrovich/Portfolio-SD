@@ -408,6 +408,7 @@ h2 {
   margin-bottom: 40px;
 }
 
+// --- Filtri Software ---
 .software-filter {
   display: flex;
   gap: 12px;
@@ -480,4 +481,21 @@ h2 {
     border: solid 1px darken($bluecolor, 8%);
     outline: solid 3px darken($bluecolor, 8%);
     cursor: pointer;
+  }
+
+// --- Loghi ---
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+  .logo {
+    img {
+      max-width: 20%;
+    }
   }
