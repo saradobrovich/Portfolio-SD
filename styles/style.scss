@@ -1,10 +1,10 @@
 // --- Variabili colori e font ---
 $bgcolor: #fef6f0;
-$accentcolor: #B34246;
+$accentcolor: #B34245;
 $textcolor: #281515;
-$yellowcolor: #E9B772;
-$greencolor: #93AC5D;
-$bluecolor: #6E9BAF;
+$yellowcolor: #E3A54F;
+$greencolor: #89A253;
+$bluecolor: #57899E;
 $fonttitle: "DM Serif Text", serif;
 $fonttext: "Inter", sans-serif;
 
@@ -25,6 +25,10 @@ strong {
 // --- Body ---
 body {
   background-color: $bgcolor;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -409,3 +413,71 @@ h2 {
   gap: 12px;
   justify-content: center;
 }
+.software button {
+  font-family: $fonttext;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #fef6f0;
+  font-weight: 500;
+}
+.ads {
+  background-color: $greencolor;
+  border: solid 1px $greencolor;
+  &:hover {
+    outline: solid 3px darken($greencolor, 8%);
+    cursor: pointer;
+  }
+}
+.ads:active {
+    background-color: darken($greencolor, 8%);
+    border: solid 1px darken($greencolor, 8%);
+    outline: solid 3px darken($greencolor, 8%);
+    cursor: pointer;
+  }
+
+.design {
+  background-color: $accentcolor;
+  border: solid 1px $accentcolor;
+  &:hover {
+    outline: solid 3px darken($accentcolor, 8%);
+    cursor: pointer;
+  }
+}
+.design:active {
+    background-color: darken($accentcolor, 8%);
+    border: solid 1px darken($accentcolor, 8%);
+    outline: solid 3px darken($accentcolor, 8%);
+    cursor: pointer;
+  }
+
+
+.content {
+  background-color: $yellowcolor;
+  border: solid 1px $yellowcolor;
+  &:hover {
+  outline: solid 3px darken($yellowcolor, 8%);
+  cursor: pointer;
+  }
+}
+.content:active {
+    background-color: darken($yellowcolor, 8%);
+    border: solid 1px darken($yellowcolor, 8%);
+    outline: solid 3px darken($yellowcolor, 8%);
+    cursor: pointer;
+  }
+
+.coding {
+  background-color: $bluecolor;
+  border: solid 1px $bluecolor;
+  &:hover {
+    outline: solid 3px darken($bluecolor, 8%);
+    cursor: pointer;
+  }
+}
+ .coding:active {
+    background-color: darken($bluecolor, 8%);
+    border: solid 1px darken($bluecolor, 8%);
+    outline: solid 3px darken($bluecolor, 8%);
+    cursor: pointer;
+  }

@@ -6,6 +6,10 @@ body {
   background-color: #fef6f0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .menu {
   display: flex;
   font-size: 18px;
@@ -28,13 +32,12 @@ body {
 .menu-link {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: #B34246;
+  color: #B34245;
   text-decoration: none;
   transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
 }
 .menu-link:hover {
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
+  text-decoration: underline 2px;
   margin: none;
 }
 
@@ -43,7 +46,7 @@ body {
 }
 
 h1 {
-  color: #B34246;
+  color: #B34245;
   font-family: "DM Serif Text", serif;
   font-weight: 900;
   font-size: 94px;
@@ -59,7 +62,7 @@ h1 {
 
 h2 {
   font-family: "DM Serif Text", serif;
-  color: #B34246;
+  color: #B34245;
   text-align: center;
   font-size: 54px;
 }
@@ -115,21 +118,21 @@ h2 {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 900;
-  color: #B34246;
+  color: #B34245;
   background-color: transparent;
-  border: 3px solid #B34246;
+  border: 3px solid #B34245;
   border-radius: 10px;
   position: relative;
   z-index: 1;
 }
 .button-contatti:hover {
-  background-color: #B34246;
+  background-color: #B34245;
   color: #fef6f0;
   cursor: pointer;
 }
 
 .valori {
-  background-color: #B34246;
+  background-color: #B34245;
   padding: 80px 220px;
   margin-top: 240px;
   position: relative;
@@ -248,8 +251,7 @@ h2 {
 .cornice-rom img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease-in-out;
 }
@@ -290,8 +292,7 @@ h2 {
 .cornice-s2i img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease-in-out;
 }
@@ -329,8 +330,7 @@ h2 {
 .cornice-vc img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease-in-out;
 }
@@ -367,8 +367,7 @@ h2 {
 .cornice-mb img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease-in-out;
 }
@@ -406,4 +405,79 @@ h2 {
   display: flex;
   gap: 12px;
   justify-content: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.software button {
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #fef6f0;
+  font-weight: 500;
+}
+
+.ads {
+  background-color: #89A253;
+  border: solid 1px #89A253;
+}
+.ads:hover {
+  outline: solid 3px rgb(114.1853061224, 135.0220408163, 69.1779591837);
+  cursor: pointer;
+}
+
+.ads:active {
+  background-color: rgb(114.1853061224, 135.0220408163, 69.1779591837);
+  border: solid 1px rgb(114.1853061224, 135.0220408163, 69.1779591837);
+  outline: solid 3px rgb(114.1853061224, 135.0220408163, 69.1779591837);
+  cursor: pointer;
+}
+
+.design {
+  background-color: #B34245;
+  border: solid 1px #B34245;
+}
+.design:hover {
+  outline: solid 3px rgb(149.1910204082, 55.0089795918, 57.5093877551);
+  cursor: pointer;
+}
+
+.design:active {
+  background-color: rgb(149.1910204082, 55.0089795918, 57.5093877551);
+  border: solid 1px rgb(149.1910204082, 55.0089795918, 57.5093877551);
+  outline: solid 3px rgb(149.1910204082, 55.0089795918, 57.5093877551);
+  cursor: pointer;
+}
+
+.content {
+  background-color: #E3A54F;
+  border: solid 1px #E3A54F;
+}
+.content:hover {
+  outline: solid 3px rgb(221.4, 147, 43.8);
+  cursor: pointer;
+}
+
+.content:active {
+  background-color: rgb(221.4, 147, 43.8);
+  border: solid 1px rgb(221.4, 147, 43.8);
+  outline: solid 3px rgb(221.4, 147, 43.8);
+  cursor: pointer;
+}
+
+.coding {
+  background-color: #57899E;
+  border: solid 1px #57899E;
+}
+.coding:hover {
+  outline: solid 3px rgb(72.5118367347, 114.1853061224, 131.6881632653);
+  cursor: pointer;
+}
+
+.coding:active {
+  background-color: rgb(72.5118367347, 114.1853061224, 131.6881632653);
+  border: solid 1px rgb(72.5118367347, 114.1853061224, 131.6881632653);
+  outline: solid 3px rgb(72.5118367347, 114.1853061224, 131.6881632653);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
