@@ -53,11 +53,6 @@ h1 {
   margin-bottom: 0px;
   z-index: 1;
   position: relative;
-  /*text-shadow:
-    -1px -1px 0 #421010,
-     1px -1px 0 #421010,
-    -1px  1px 0 #421010,
-     1px  1px 0 #421010; */
 }
 
 h2 {
@@ -405,7 +400,6 @@ h2 {
   display: flex;
   gap: 12px;
   justify-content: center;
-  margin-bottom: 80px;
 }
 
 .software button {
@@ -503,8 +497,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  line-height: 10px;
   padding: 0;
-  margin: 20px 60px;
+  margin: 100px 100px 20px 100px;
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -515,6 +510,10 @@ h2 {
   width: auto;
   height: auto;
   display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.logos img:hover {
+  transform: scale(1.05);
 }
 
 .software-app {
@@ -527,28 +526,60 @@ h2 {
   display: inline-block;
 }
 
-/* ads */
 #ads:target ~ .software-app .logos li:not(.logo-ads) {
   display: none;
 }
 
-/* design */
 #design:target ~ .software-app .logos li:not(.logo-design) {
   display: none;
 }
 
-/* content */
 #content:target ~ .software-app .logos li:not(.logo-content) {
   display: none;
 }
 
-/* coding */
 #coding:target ~ .software-app .logos li:not(.logo-coding) {
   display: none;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  max-height: 80px;
+  transition: transform 0.3s;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #281515;
+  color: #fef6f0;
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  padding: 5px 8px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  margin-bottom: 12px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
+
 .contatti {
-  margin: 500px 60px;
+  margin: 120px 164px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@ $bluecolor: #57899E;
 $fonttitle: "DM Serif Text", serif;
 $fonttext: "Inter", sans-serif;
 
-// --- Regole ---
+// --- Regole ----------------------------------------------------------
 @mixin font-text {
   font-family: $fonttext;
   font-size: 20px;
@@ -17,12 +17,12 @@ $fonttext: "Inter", sans-serif;
 }
 
 
-// --- Accento ---
+// --- Accento ----------------------------------------------------------
 strong {
   font-weight: 600;
 }
 
-// --- Body ---
+// --- Body --------------------------------------------------------------
 body {
   background-color: $bgcolor;
 }
@@ -32,7 +32,7 @@ html {
 }
 
 
-// --- Navigazione ---
+// --- Navigazione -----------------------------------------------------------
 .menu {
   display: flex;
   font-size: 18px;
@@ -68,7 +68,7 @@ html {
   scroll-margin-top: 240px;
 }
 
-// --- Titoli ---
+// --- Titoli --------------------------------------------------------
 h1 {
   color: $accentcolor;
   font-family: $fonttitle;
@@ -77,11 +77,6 @@ h1 {
   margin-bottom: 0px;
   z-index: 1;
   position: relative;
-  /*text-shadow:
-    -1px -1px 0 #421010,
-     1px -1px 0 #421010,
-    -1px  1px 0 #421010,
-     1px  1px 0 #421010; */
 }
 h2 {
   font-family: $fonttitle;
@@ -91,7 +86,7 @@ h2 {
 }
 
 
-// --- Chi sono ---
+// --- Chi sono -------------------------------------------------------------
 .chi-sono { /* contenitore chi sono */
   position: relative;
   margin: 120px 164px;
@@ -114,7 +109,7 @@ h2 {
 
 
 
-// --- Immagine profilo ---
+// --- Immagine profilo ------------------------------------------------------
 .foto-profilo {
   z-index: 0;
   border-radius: 24px;
@@ -139,7 +134,7 @@ h2 {
   }
 }
 
-// --- Bottone chi sono ---
+// --- Bottone chi sono -------------------------------------------------------
 .button-contatti {
   font-family: $fonttext;
   letter-spacing: 1px;
@@ -159,7 +154,7 @@ h2 {
   }
 }
 
-// --- Valori ---
+// --- Valori ------------------------------------------------------------------
 .valori {
   background-color: $accentcolor;
   padding: 80px 220px;
@@ -223,7 +218,7 @@ h2 {
 }
 
 
-// --- Portfolio ---
+// --- Portfolio -----------------------------------------------------------
 .portfolio {
   margin: 120px 220px;
   text-align: center;
@@ -397,7 +392,7 @@ h2 {
   text-shadow: #281515cf 2px 2px 4px;
 }
 
-// --- Software ---
+// --- Software ----------------------------------------------------------------
 .software {
   margin: 120px 220px;
   text-align: center;
@@ -408,12 +403,11 @@ h2 {
   margin-bottom: 40px;
 }
 
-// --- Filtri Software ---
+// --- Filtri Software --------------------------------------------------------
 .software-filter {
   display: flex;
   gap: 12px;
   justify-content: center;
-  margin-bottom: 80px;
 }
 .software button {
   font-family: $fonttext;
@@ -500,14 +494,15 @@ h2 {
     cursor: pointer;
   }
 
-// --- Loghi ---
+// --- Loghi --------------------------------------------------------
 
 .logos {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  line-height: 10px;
   padding: 0;
-  margin: 20px 60px;
+  margin: 100px 100px 20px 100px;
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -518,34 +513,70 @@ h2 {
     width: auto;
     height: auto;
     display: block;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
   }
+}
 
 .software-app {
   width: 100%;
   overflow-x: auto;
 }
 
+// --- Filtri app --------------------------------------------------------
 /* all */
 #all:target ~ .software-app .logos li {
   display: inline-block;
 }
-/* ads */
 #ads:target ~ .software-app .logos li:not(.logo-ads) {
   display: none;
 }
-/* design */
 #design:target ~ .software-app .logos li:not(.logo-design) {
   display: none;
 }
-/* content */
 #content:target ~ .software-app .logos li:not(.logo-content) {
   display: none;
 }
-/* coding */
 #coding:target ~ .software-app .logos li:not(.logo-coding) {
   display: none;
 }
 
+// --- Tooltip --------------------------------------------------------
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.image-container img {
+  max-height: 80px;
+  transition: transform 0.3s;
+}
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: $textcolor;
+  color: $bgcolor;
+  font-family: $fonttext;
+  line-height: 1;
+  padding: 5px 8px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  margin-bottom: 12px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 1;
+}
+.image-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
+  
+// --- Contatti --------------------------------------------------------
 .contatti {
-  margin: 500px 60px;
+  margin: 120px 164px;
 }
