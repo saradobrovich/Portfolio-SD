@@ -576,6 +576,76 @@ h2 {
   transform: translateX(-50%) translateY(-10px);
 }
   
+// --- My bag --------------------------------------------------------
+.my-bag {
+  margin: 120px 164px;
+  text-align: center;
+  position: relative;
+}
+
+.bag {
+  z-index: 0;
+  position: relative;
+  margin-top: 200px;
+  max-width: 500px;
+}
+
+.mic {
+  max-width: 80px;
+  z-index: 1;
+  top: 250px;
+  right: 300px;
+  rotate: 15deg;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05) rotate(-5deg);
+  }
+}
+
+.osmo {
+  max-width: 200px;
+  z-index: 1;
+  top: 300px;
+  left: 110px;
+  rotate: 5deg;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05) rotate(5deg);
+  }
+}
+
+.tool-container {
+  max-height: 200px;
+  transition: transform 0.3s;
+  position: relative;
+}
+.tooltip-bag {
+  visibility: hidden;
+  opacity: 0;
+  color: $textcolor;
+  font-family: $fonttext;
+  line-height: 2;
+  font-size: 18px;
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  margin-bottom: 12px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 1;
+}
+.tool-container:hover .tooltip-bag {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
 // --- Contatti --------------------------------------------------------
 .contatti {
   margin: 120px 164px;
