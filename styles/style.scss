@@ -413,6 +413,7 @@ h2 {
   display: flex;
   gap: 12px;
   justify-content: center;
+  margin-bottom: 80px;
 }
 .software button {
   font-family: $fonttext;
@@ -422,7 +423,23 @@ h2 {
   color: #fef6f0;
   font-weight: 500;
 }
-.ads {
+.button-all {
+  color: $textcolor !important;
+  background-color: $bgcolor;
+  border: solid 1px $textcolor;
+  &:hover {
+    outline: solid 2px $textcolor;
+    cursor: pointer;
+  }
+}
+.button-all:active {
+  color: $bgcolor !important;
+    background-color: $textcolor;
+    border: solid 1px $textcolor;
+    outline: solid 3px $textcolor;
+    cursor: pointer;
+  }
+.button-ads {
   background-color: $greencolor;
   border: solid 1px $greencolor;
   &:hover {
@@ -430,14 +447,14 @@ h2 {
     cursor: pointer;
   }
 }
-.ads:active {
+.button-ads:active {
     background-color: darken($greencolor, 8%);
     border: solid 1px darken($greencolor, 8%);
     outline: solid 3px darken($greencolor, 8%);
     cursor: pointer;
   }
 
-.design {
+.button-design {
   background-color: $accentcolor;
   border: solid 1px $accentcolor;
   &:hover {
@@ -445,7 +462,7 @@ h2 {
     cursor: pointer;
   }
 }
-.design:active {
+.button-design:active {
     background-color: darken($accentcolor, 8%);
     border: solid 1px darken($accentcolor, 8%);
     outline: solid 3px darken($accentcolor, 8%);
@@ -453,7 +470,7 @@ h2 {
   }
 
 
-.content {
+.button-content {
   background-color: $yellowcolor;
   border: solid 1px $yellowcolor;
   &:hover {
@@ -461,14 +478,14 @@ h2 {
   cursor: pointer;
   }
 }
-.content:active {
+.button-content:active {
     background-color: darken($yellowcolor, 8%);
     border: solid 1px darken($yellowcolor, 8%);
     outline: solid 3px darken($yellowcolor, 8%);
     cursor: pointer;
   }
 
-.coding {
+.button-coding {
   background-color: $bluecolor;
   border: solid 1px $bluecolor;
   &:hover {
@@ -476,7 +493,7 @@ h2 {
     cursor: pointer;
   }
 }
- .coding:active {
+ .button-coding:active {
     background-color: darken($bluecolor, 8%);
     border: solid 1px darken($bluecolor, 8%);
     outline: solid 3px darken($bluecolor, 8%);
@@ -488,14 +505,47 @@ h2 {
 .logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 50px;
+  padding: 0;
+  margin: 20px 60px;
   list-style: none;
-  padding-left: 0;
-  margin-left: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-  .logo {
-    img {
-      max-height: 100px;
-    }
+  .logos img {
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    display: block;
   }
+
+.software-app {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* all */
+#all:target ~ .software-app .logos li {
+  display: inline-block;
+}
+/* ads */
+#ads:target ~ .software-app .logos li:not(.logo-ads) {
+  display: none;
+}
+/* design */
+#design:target ~ .software-app .logos li:not(.logo-design) {
+  display: none;
+}
+/* content */
+#content:target ~ .software-app .logos li:not(.logo-content) {
+  display: none;
+}
+/* coding */
+#coding:target ~ .software-app .logos li:not(.logo-coding) {
+  display: none;
+}
+
+.contatti {
+  margin: 500px 60px;
+}

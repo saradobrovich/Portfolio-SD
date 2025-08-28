@@ -405,6 +405,7 @@ h2 {
   display: flex;
   gap: 12px;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .software button {
@@ -416,64 +417,82 @@ h2 {
   font-weight: 500;
 }
 
-.ads {
+.button-all {
+  color: #281515 !important;
+  background-color: #fef6f0;
+  border: solid 1px #281515;
+}
+.button-all:hover {
+  outline: solid 2px #281515;
+  cursor: pointer;
+}
+
+.button-all:active {
+  color: #fef6f0 !important;
+  background-color: #281515;
+  border: solid 1px #281515;
+  outline: solid 3px #281515;
+  cursor: pointer;
+}
+
+.button-ads {
   background-color: #89A253;
   border: solid 1px #89A253;
 }
-.ads:hover {
+.button-ads:hover {
   outline: solid 3px rgb(114.1853061224, 135.0220408163, 69.1779591837);
   cursor: pointer;
 }
 
-.ads:active {
+.button-ads:active {
   background-color: rgb(114.1853061224, 135.0220408163, 69.1779591837);
   border: solid 1px rgb(114.1853061224, 135.0220408163, 69.1779591837);
   outline: solid 3px rgb(114.1853061224, 135.0220408163, 69.1779591837);
   cursor: pointer;
 }
 
-.design {
+.button-design {
   background-color: #B34245;
   border: solid 1px #B34245;
 }
-.design:hover {
+.button-design:hover {
   outline: solid 3px rgb(149.1910204082, 55.0089795918, 57.5093877551);
   cursor: pointer;
 }
 
-.design:active {
+.button-design:active {
   background-color: rgb(149.1910204082, 55.0089795918, 57.5093877551);
   border: solid 1px rgb(149.1910204082, 55.0089795918, 57.5093877551);
   outline: solid 3px rgb(149.1910204082, 55.0089795918, 57.5093877551);
   cursor: pointer;
 }
 
-.content {
+.button-content {
   background-color: #E3A54F;
   border: solid 1px #E3A54F;
 }
-.content:hover {
+.button-content:hover {
   outline: solid 3px rgb(221.4, 147, 43.8);
   cursor: pointer;
 }
 
-.content:active {
+.button-content:active {
   background-color: rgb(221.4, 147, 43.8);
   border: solid 1px rgb(221.4, 147, 43.8);
   outline: solid 3px rgb(221.4, 147, 43.8);
   cursor: pointer;
 }
 
-.coding {
+.button-coding {
   background-color: #57899E;
   border: solid 1px #57899E;
 }
-.coding:hover {
+.button-coding:hover {
   outline: solid 3px rgb(72.5118367347, 114.1853061224, 131.6881632653);
   cursor: pointer;
 }
 
-.coding:active {
+.button-coding:active {
   background-color: rgb(72.5118367347, 114.1853061224, 131.6881632653);
   border: solid 1px rgb(72.5118367347, 114.1853061224, 131.6881632653);
   outline: solid 3px rgb(72.5118367347, 114.1853061224, 131.6881632653);
@@ -483,14 +502,53 @@ h2 {
 .logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 50px;
+  padding: 0;
+  margin: 20px 60px;
   list-style: none;
-  padding-left: 0;
-  margin-left: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo img {
-  max-height: 100px;
+.logos img {
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.software-app {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* all */
+#all:target ~ .software-app .logos li {
+  display: inline-block;
+}
+
+/* ads */
+#ads:target ~ .software-app .logos li:not(.logo-ads) {
+  display: none;
+}
+
+/* design */
+#design:target ~ .software-app .logos li:not(.logo-design) {
+  display: none;
+}
+
+/* content */
+#content:target ~ .software-app .logos li:not(.logo-content) {
+  display: none;
+}
+
+/* coding */
+#coding:target ~ .software-app .logos li:not(.logo-coding) {
+  display: none;
+}
+
+.contatti {
+  margin: 500px 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

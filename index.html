@@ -25,7 +25,7 @@
         <p class="chi-sono-text"><strong>Digital Experience Designer</strong> specializzata in digital marketing e content creation, appassionata di <strong>benessere digitale</strong> e <strong>comunicazione creativa</strong>.
             <br>
             <br>Progetto esperienze digitali che mettono al centro le persone, tra interfacce, parole e narrazioni.</p>
-            <button type="button" class="button-contatti">mettiamoci in contatto</button>
+            <a href="#contatti"><button type="button" class="button-contatti">mettiamoci in contatto</button></a>
             </div>
         <div class="valori">
             <h2 class="valori-title">Credo in spazi online
@@ -101,47 +101,55 @@
                     </a>
                 </div>
                 <p class="portfolio-text">Vuoi scoprire ciò che possiamo costruire insieme?</p>
-                <button type="button" class="button-contatti">parliamone</button>
+                <a href="#contatti"><button type="button" class="button-contatti">parliamone</button></a>
         </div>
         <div class="software">
+                <div id="all"></div>
+                <div id="ads"></div>
+                <div id="design"></div>
+                <div id="content"></div>
+                <div id="coding"></div>
             <h2>Software che utilizzo</h2>
             <p class="software-text">Questi sono i software che utilizzo maggiormente,
                 per la creazione di progetti personali e lavorativi.</p>
                 <div class="software-filter">
-                    <button class="ads" data-filter="ads" type="button" aria-label="bottone filtro ads & marketing">ads & marketing</button>
-                    <button class="design" data-filter="design" type="button" aria-label="bottone filtro design & UI/UX">design & UI/UX</button>
-                    <button class="content" data-filter="content" type="button" aria-label="bottone filtro content creation">content creation</button>
-                    <button class="coding" data-filter="coding" type="button" aria-label="bottone filtro coding & DEV">coding & DEV</button>
+                    <a href="#all"><button class="button-all" data-filter="all" type="button" aria-label="bottone filtro tutti i software">tutti</button></a>
+                    <a href="#ads"><button class="button-ads" data-filter="ads" type="button" aria-label="bottone filtro software ads & marketing">ads & marketing</button></a>
+                    <a href="#design"><button class="button-design" data-filter="design" type="button" aria-label="bottone filtro software design & UI/UX">design & UI/UX</button></a>
+                    <a href="#content"><button class="button-content" data-filter="content" type="button" aria-label="bottone filtro software content creation">content creation</button></a>
+                    <a href="#coding"><button class="button-coding" data-filter="coding" type="button" aria-label="bottone filtro software coding & DEV">coding & DEV</button></a>
                 </div>
             <div class="software-app">
-                <ul class="logos">
-                    <li class="logo"><img src="images/loghi/meta.svg" alt="Meta Ads"></li>
-                    <li class="logo"><img src="images/loghi/tiktok.svg" alt="TikTok Ads"></li>
-                    <li class="logo"><img src="images/loghi/linkedin.svg" alt="LinkedIn Ads"></li>
-                    <li class="logo"><img src="images/loghi/google.svg" alt="Google"></li>
-                    <li class="logo"><img src="images/loghi/google_ads.svg" alt="Google Ads"></li>
-                    <li class="logo"><img src="images/loghi/analytics.svg" alt="Google Analytics"></li>
-                    <li class="logo"><img src="images/loghi/wordpress.svg" alt="WordPress"></li>
-                    <li class="logo"><img src="images/loghi/figma.svg" alt="Figma"></li>
-                    <li class="logo"><img src="images/loghi/adobe.svg" alt="Adobe"></li>
-                    <li class="logo"><img src="images/loghi/adobe_ai.svg" alt="Adobe Illustrator"></li>
-                    <li class="logo"><img src="images/loghi/adobe_ps.svg" alt="Adobe Photoshop"></li>
-                    <li class="logo"><img src="images/loghi/adobe_id.svg" alt="Adobe InDesign"></li>
-                    <li class="logo"><img src="images/loghi/canva.svg" alt="Canva"></li>
-                    <li class="logo"><img src="images/loghi/capcut.svg" alt="CapCut"></li>
-                    <li class="logo"><img src="images/loghi/adobe_pr.svg" alt="Adobe Premiere Pro"></li>
-                    <li class="logo"><img src="images/loghi/chatgpt.svg" alt="ChatGPT"></li>
-                    <li class="logo"><img src="images/loghi/copilot.svg" alt="Copilot Github"></li>
-                    <li class="logo"><img src="images/loghi/claude.svg" alt="Claude AI"></li>
-                    <li class="logo"><img src="images/loghi/zapier.svg" alt="Zapier"></li>
-                    <li class="logo"><img src="images/loghi/Typeform.svg" alt="Typeform"></li>
-                    <li class="logo"><img src="images/loghi/mailchimp.png" alt="Mailchimp"></li>
-                    <li class="logo"><img src="images/loghi/github.svg" alt="GitHub"></li>
-                    <li class="logo"><img src="images/loghi/html-5.svg" alt="HTML5"></li>
-                    <li class="logo"><img src="images/loghi/css-3.svg" alt="CSS3"></li>
-                    <li class="logo"><img src="images/loghi/scss.svg" alt="Sass"></li>
+                <ul class="logos" id="logos-app">
+                    <li class="logo-ads"><img src="images/loghi/meta.svg" alt="Meta Ads"></li>
+                    <li class="logo-ads"><img src="images/loghi/tiktok.svg" alt="TikTok Ads"></li>
+                    <li class="logo-ads"><img src="images/loghi/linkedin.png" alt="LinkedIn Ads"></li>
+                    <li class="logo-ads"><img src="images/loghi/google.svg" alt="Google"></li>
+                    <li class="logo-ads"><img src="images/loghi/google_ads.svg" alt="Google Ads"></li>
+                    <li class="logo-ads"><img src="images/loghi/analytics.svg" alt="Google Analytics"></li>
+                    <li class="logo-content"><img src="images/loghi/wordpress.svg" alt="WordPress"></li>
+                    <li class="logo-design"><img src="images/loghi/figma.svg" alt="Figma"></li>
+                    <li class="logo-design"><img src="images/loghi/adobe.png" alt="Adobe"></li>
+                    <li class="logo-design"><img src="images/loghi/adobe_ai.png" alt="Adobe Illustrator"></li>
+                    <li class="logo-design"><img src="images/loghi/adobe_ps.png" alt="Adobe Photoshop"></li>
+                    <li class="logo-design"><img src="images/loghi/adobe_id.png" alt="Adobe InDesign"></li>
+                    <li class="logo-content"><img src="images/loghi/canva.png" alt="Canva"></li>
+                    <li class="logo-content"><img src="images/loghi/capcut.png" alt="CapCut"></li>
+                    <li class="logo-content"><img src="images/loghi/adobe_pr.png" alt="Adobe Premiere Pro"></li>
+                    <li class="logo-ads"><img src="images/loghi/chatgpt.png" alt="ChatGPT"></li>
+                    <li class="logo-ads"><img src="images/loghi/copilot.svg" alt="Copilot Github"></li>
+                    <li class="logo-ads"><img src="images/loghi/claude.svg" alt="Claude AI"></li>
+                    <li class="logo-ads"><img src="images/loghi/Zapier.svg" alt="Zapier"></li>
+                    <li class="logo-ads"><img src="images/loghi/typeform.png" alt="Typeform"></li>
+                    <li class="logo-ads"><img src="images/loghi/mailchimp.svg" alt="Mailchimp"></li>
+                    <li class="logo-coding"><img src="images/loghi/github.svg" alt="GitHub"></li>
+                    <li class="logo-coding"><img src="images/loghi/html.png" alt="HTML5"></li>
+                    <li class="logo-coding"><img src="images/loghi/css.svg" alt="CSS3"></li>
+                    <li class="logo-coding"><img src="images/loghi/scss.svg" alt="Sass"></li>
                 </ul>
             </div>
         </div>
+        <div id="contatti"></div>
+        <div class="contatti"></div>
     </body>
 </html>
