@@ -640,7 +640,7 @@ h2 {
   max-height: 250px;
   z-index: 1;
   top: 100px;
-  left: 390px;
+  left: 380px;
   rotate: -5deg;
   position: absolute;
   justify-content: flex-start;
@@ -729,7 +729,7 @@ h2 {
 }
 
 .tooltip-ipad {
-  max-width: 240px;
+  max-width: 280px;
   visibility: hidden;
   opacity: 0;
   color: #281515;
@@ -738,7 +738,7 @@ h2 {
   line-height: 1.6;
   font-size: 18px;
   position: absolute;
-  right: 20px;
+  right: 0px;
   bottom: 100px;
   pointer-events: none;
   z-index: 1;
