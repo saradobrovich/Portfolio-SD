@@ -651,6 +651,20 @@ h2 {
   }
 }
 
+.occhiali {
+  max-width: 200px;
+  z-index: 1;
+  top: 80px;
+  right: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05) rotate(-5deg);
+  }
+}
+
 .tools-container img {
   transition: transform 0.3s;
 }
@@ -730,6 +744,26 @@ h2 {
   z-index: 1;
 }
 .tools-container:hover .tooltip-iphone {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.tooltip-occhiali {
+  max-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  color: $textcolor;
+  text-align: center;
+  font-family: $fontfun;
+  line-height: 1.6;
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 160px;
+  pointer-events: none;
+  z-index: 1;
+}
+.tools-container:hover .tooltip-occhiali {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s, transform 0.3s;
