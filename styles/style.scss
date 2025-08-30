@@ -584,6 +584,10 @@ h2 {
   position: relative;
 }
 
+.my-bag-title {
+  margin-bottom: 20px;
+}
+
 .bag {
   z-index: 0;
   position: relative;
@@ -679,6 +683,8 @@ h2 {
     transform: scale(1.05) rotate(-5deg);
   }
 }
+
+// ---- Tooltip my bag ---------------------------------------------
 
 .tools-container img {
   transition: transform 0.3s;
@@ -806,4 +812,32 @@ h2 {
 // --- Contatti --------------------------------------------------------
 .contatti {
   margin: 120px 164px;
+}
+
+.contatti-title {
+  margin-bottom: 60px;
+}
+
+.contatti-text {
+  @include font-text;
+  text-align: left;
+  max-width: 600px;
+}
+
+.social {
+  margin-top: 80px;
+  @include font-text;
+}
+.contatti-social {
+  display: flex;
+  gap: 30px;
+    margin-top: 8px;
+  align-items: center;
+}
+.contatti-social img {
+  max-width: 50px;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.3);
+}
 }
