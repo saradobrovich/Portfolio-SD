@@ -610,7 +610,7 @@ h2 {
   max-width: 200px;
   z-index: 1;
   top: 380px;
-  left: 0;
+  left: 130px;
   rotate: 5deg;
   position: absolute;
   justify-content: flex-start;
@@ -637,10 +637,10 @@ h2 {
 }
 
 .iphone {
-  max-height: 280px;
+  max-height: 250px;
   z-index: 1;
-  top: 80px;
-  left: 250px;
+  top: 100px;
+  left: 390px;
   rotate: -5deg;
   position: absolute;
   justify-content: flex-start;
@@ -654,8 +654,23 @@ h2 {
 .occhiali {
   max-width: 200px;
   z-index: 1;
-  top: 80px;
+  top: 160px;
   right: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05) rotate(-5deg);
+  }
+}
+
+.libro {
+  max-width: 150px;
+  z-index: 1;
+  top: 100px;
+  left: 0px;
+  rotate: -5deg;
   position: absolute;
   justify-content: flex-start;
   align-items: flex-start;
@@ -698,7 +713,7 @@ h2 {
   line-height: 1.6;
   font-size: 18px;
   position: absolute;
-  left: 20px;
+  left: 160px;
   bottom: 60px;
   pointer-events: none;
   z-index: 1;
@@ -738,8 +753,8 @@ h2 {
   line-height: 1.6;
   font-size: 18px;
   position: absolute;
-  left: 240px;
-  top: 370px;
+  left: 360px;
+  top: 360px;
   pointer-events: none;
   z-index: 1;
 }
@@ -758,12 +773,32 @@ h2 {
   line-height: 1.6;
   font-size: 18px;
   position: absolute;
-  right: 20px;
-  top: 160px;
+  right: 40px;
+  top: 250px;
   pointer-events: none;
   z-index: 1;
 }
 .tools-container:hover .tooltip-occhiali {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.tooltip-libro {
+  max-width: 300px;
+  visibility: hidden;
+  opacity: 0;
+  color: $textcolor;
+  text-align: center;
+  font-family: $fontfun;
+  line-height: 1.6;
+  font-size: 18px;
+  position: absolute;
+  left: -70px;
+  top: 300px;
+  pointer-events: none;
+  z-index: 1;
+}
+.tools-container:hover .tooltip-libro {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s, transform 0.3s;
