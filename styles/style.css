@@ -594,8 +594,8 @@ h2 {
 .mic {
   max-width: 80px;
   z-index: 1;
-  top: 250px;
-  right: 300px;
+  top: 120px;
+  right: 400px;
   rotate: 15deg;
   position: absolute;
   justify-content: flex-start;
@@ -609,8 +609,8 @@ h2 {
 .osmo {
   max-width: 200px;
   z-index: 1;
-  top: 300px;
-  left: 110px;
+  top: 380px;
+  left: 0;
   rotate: 5deg;
   position: absolute;
   justify-content: flex-start;
@@ -621,33 +621,126 @@ h2 {
   transform: scale(1.05) rotate(5deg);
 }
 
-.tool-container {
-  max-height: 200px;
-  transition: transform 0.3s;
-  position: relative;
+.ipad {
+  max-width: 300px;
+  z-index: 1;
+  bottom: 190px;
+  right: 0;
+  rotate: 5deg;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+}
+.ipad:hover {
+  transform: scale(1.05) rotate(5deg);
 }
 
-.tooltip-bag {
+.iphone {
+  max-height: 280px;
+  z-index: 1;
+  top: 80px;
+  left: 250px;
+  rotate: -5deg;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+}
+.iphone:hover {
+  transform: scale(1.05) rotate(-5deg);
+}
+
+.tools-container img {
+  transition: transform 0.3s;
+}
+
+.tooltip-mic {
+  max-width: 200px;
   visibility: hidden;
   opacity: 0;
   color: #281515;
-  font-family: "Inter", sans-serif;
-  line-height: 2;
+  text-align: center;
+  font-family: "Sour Gummy", cursive;
+  line-height: 1.6;
   font-size: 18px;
   position: absolute;
-  bottom: 85%;
-  left: 50%;
-  margin-bottom: 12px;
-  transform: translateX(-50%);
-  transition: opacity 0.3s, transform 0.3s;
+  right: 340px;
+  top: 260px;
   pointer-events: none;
   z-index: 1;
 }
 
-.tool-container:hover .tooltip-bag {
+.tools-container:hover .tooltip-mic {
   visibility: visible;
   opacity: 1;
-  transform: translateX(-50%) translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-osmo {
+  max-width: 220px;
+  visibility: hidden;
+  opacity: 0;
+  color: #281515;
+  text-align: center;
+  font-family: "Sour Gummy", cursive;
+  line-height: 1.6;
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tools-container:hover .tooltip-osmo {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-ipad {
+  max-width: 240px;
+  visibility: hidden;
+  opacity: 0;
+  color: #281515;
+  text-align: center;
+  font-family: "Sour Gummy", cursive;
+  line-height: 1.6;
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tools-container:hover .tooltip-ipad {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-iphone {
+  max-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  color: #281515;
+  text-align: center;
+  font-family: "Sour Gummy", cursive;
+  line-height: 1.6;
+  font-size: 18px;
+  position: absolute;
+  left: 240px;
+  top: 370px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tools-container:hover .tooltip-iphone {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .contatti {
