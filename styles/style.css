@@ -886,6 +886,7 @@ h2 {
 }
 
 .contatti-social img {
+  z-index: 1;
   max-width: 50px;
   transition: transform 0.3s ease-in-out;
 }
@@ -924,8 +925,7 @@ h2 {
   border-radius: 10px;
 }
 .form-control:focus {
-  outline: none;
-  border-color: #57899E;
+  outline: 2px solid #B34245;
 }
 
 .contatti-mail {
@@ -954,6 +954,7 @@ h2 {
   max-width: 100px;
   font-size: 20px;
   font-weight: 900;
+  margin-top: 24px;
   color: #B34245;
   background-color: transparent;
   border: 3px solid #B34245;
@@ -979,6 +980,74 @@ h2 {
 }
 .condizioni-form p {
   margin: 0;
+}
+
+.pencil-bg {
+  z-index: 0;
+  position: absolute;
+  width: 380px;
+  margin-top: 130px;
+  left: -180px;
+  rotate: 8deg;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .contatti {
+    margin: 40px 12px;
+  }
+  .contatti-info {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+  }
+  .contatti-left,
+  .contatti-form {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+  }
+  .contatti-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .contatti-text {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .social {
+    margin-top: 32px;
+    align-items: center;
+    font-size: 16px;
+  }
+  .contatti-social {
+    gap: 18px;
+    margin-top: 8px;
+    justify-content: center;
+  }
+  .contatti-social img {
+    max-width: 36px;
+  }
+  .form {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .form-control {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+  .button-invia {
+    font-size: 16px;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .condizioni-form {
+    font-size: 12px;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
