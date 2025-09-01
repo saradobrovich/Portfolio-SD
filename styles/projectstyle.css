@@ -1,0 +1,111 @@
+@charset "UTF-8";
+strong {
+  font-weight: 600;
+}
+
+body {
+  background-color: #fef6f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #B34245;
+  font-family: "DM Serif Text", serif;
+  font-weight: 900;
+  font-size: 94px;
+  margin-bottom: 0px;
+  z-index: 1;
+  position: relative;
+}
+
+h2 {
+  font-family: "DM Serif Text", serif;
+  color: #B34245;
+  text-align: center;
+  font-size: 54px;
+}
+
+h3 {
+  font-family: "DM Serif Text", serif;
+  color: #281515;
+  font-size: 32px;
+  text-align: center;
+  margin-top: -35px;
+}
+
+.breadcrumb {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  display: flex;
+  font-size: 18px;
+  width: 100vw;
+  list-style: none;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #281515;
+  transition: transform 0.3s ease-in-out;
+}
+.breadcrumb a:hover {
+  color: #B34245;
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: #B34245;
+  margin: 0 8px;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 40px 220px;
+  text-align: center;
+}
+
+.attività {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 40px;
+}
+
+.attività button {
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #fef6f0;
+  font-weight: 500;
+}
+
+.button-ads {
+  background-color: #89A253;
+  border: solid 1px #89A253;
+}
+
+.button-design {
+  background-color: #B34245;
+  border: solid 1px #B34245;
+}
+
+.button-content {
+  background-color: #E3A54F;
+  border: solid 1px #E3A54F;
+}
+
+.button-smm {
+  background-color: #57899E;
+  border: solid 1px #57899E;
+}
+
+/*# sourceMappingURL=projectstyle.css.map */

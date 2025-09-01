@@ -1,0 +1,119 @@
+// --- Variabili colori e font ---
+$bgcolor: #fef6f0;
+$accentcolor: #B34245;
+$textcolor: #281515;
+$yellowcolor: #E3A54F;
+$greencolor: #89A253;
+$bluecolor: #57899E;
+$fonttitle: "DM Serif Text", serif;
+$fonttext: "Inter", sans-serif;
+$fontfun: 'Sour Gummy', cursive;
+
+// --- Regole ----------------------------------------------------------
+@mixin font-text {
+  font-family: $fonttext;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+// --- Accento ----------------------------------------------------------
+strong {
+  font-weight: 600;
+}
+
+// --- Body --------------------------------------------------------------
+body {
+  background-color: $bgcolor;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// --- Titoli --------------------------------------------------------
+h1 {
+  color: $accentcolor;
+  font-family: $fonttitle;
+  font-weight: 900;
+  font-size: 94px;
+  margin-bottom: 0px;
+  z-index: 1;
+  position: relative;
+}
+h2 {
+  font-family: $fonttitle;
+  color: $accentcolor;
+  text-align: center;
+  font-size: 54px;
+}
+h3 {
+  font-family: $fonttitle;
+  color: $textcolor;
+  font-size: 32px;
+  text-align: center;
+  margin-top: -35px;
+}
+
+// --- Breadcrumb --------------------------------------------------------
+.breadcrumb {
+  @include font-text;
+  display: flex;
+  font-size: 18px;
+  width: 100vw;
+  list-style: none;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: $textcolor;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    color: $accentcolor;
+    text-decoration: underline;
+}
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/"; 
+  color: $accentcolor;
+  margin: 0 8px;
+}
+
+.description {
+  @include font-text;
+  margin: 40px 220px;
+  text-align: center;
+}
+
+.attività {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 40px;
+}
+.attività button {
+  font-family: $fonttext;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #fef6f0;
+  font-weight: 500;
+}
+
+.button-ads {
+  background-color: $greencolor;
+  border: solid 1px $greencolor;
+  }
+.button-design {
+  background-color: $accentcolor;
+  border: solid 1px $accentcolor;
+  }
+.button-content {
+  background-color: $yellowcolor;
+  border: solid 1px $yellowcolor;
+  }
+.button-smm {
+  background-color: $bluecolor;
+  border: solid 1px $bluecolor;
+  }
