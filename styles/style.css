@@ -61,6 +61,7 @@ h1 {
   margin-bottom: 0px;
   z-index: 1;
   position: relative;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -68,6 +69,7 @@ h2 {
   color: #B34245;
   text-align: center;
   font-size: 54px;
+  letter-spacing: 1px;
 }
 
 .chi-sono { /* contenitore chi sono */
