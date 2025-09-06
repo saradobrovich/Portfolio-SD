@@ -182,25 +182,25 @@ h3 {
 .card-img { 
   width: 290px;
   height: 215px;
-  max-width: 100%;
+  max-width: auto;
   border-radius: 12px;
   border: 1px solid #281515;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center; 
   position: relative;
   margin-bottom: 6px;
 }
 
 .card-img img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
   display: block;
   transition: transform 0.3s ease-in-out;
-   &:hover {
-   transform: scale(1.10);
-   cursor: pointer;
-   }
+  &:hover {
+    transform: scale(1.10);
+    cursor: pointer;
   }
+}
