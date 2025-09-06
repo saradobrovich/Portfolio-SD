@@ -107,7 +107,7 @@ h3 {
 
 .description {
   @include font-text;
-  margin: 40px 220px;
+  margin: 62px 220px;
   text-align: center;
 }
 
@@ -115,7 +115,7 @@ h3 {
   display: flex;
   gap: 12px;
   justify-content: center;
-  margin: 40px;
+  margin: 60px;
 }
 .attività button {
   font-family: $fonttext;
@@ -164,7 +164,7 @@ h3 {
 .card-body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 460px;
   max-width: 300px;
 }
 
