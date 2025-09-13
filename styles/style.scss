@@ -119,17 +119,16 @@ h2 {
 }
 
 
-
 // --- Immagine profilo ------------------------------------------------------
 .foto-profilo {
   z-index: 0;
   border-radius: 24px;
   margin-top: -200px;
   position: absolute;
-  max-height: 600px;
-  max-width: 40vw;    // larghezza massima 40% viewport
+  max-height: 700px;
+  max-width: 40vw;    // larghezza massima 80% viewport
   height: auto;       // mantiene le proporzioni
-  right: 0px;
+  right: 20px;
 }
 
 // Responsive per schermi piccoli /* fare media query per tutto il sito*/
@@ -138,7 +137,7 @@ h2 {
     position: static;    // non più assoluta
     margin: 40px auto 0 auto;
     display: block;
-    max-width: 80vw;     // più grande su mobile
+    max-width: 90vw;     // più grande su mobile
     width: 100%;         // si adatta al contenitore
     height: auto;
     right: auto;
@@ -964,8 +963,178 @@ h2 {
   opacity: 0.6;
 }
 
-// --- Media query contatti mobile ---------------------------------------
+// --- Media query mobile ---------------------------------------
 @media (max-width: 900px) {
+  // Navigazione
+  .menu {
+    font-size: 16px;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom-width: 2px;
+  }
+
+  // Titoli
+  h1 {
+    font-size: 38px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  // Sezione Chi sono
+  .chi-sono {
+    margin: 40px 12px;
+    margin-top: 120px;
+  }
+  .chi-sono-text {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: left;
+    margin: 1em 0;
+  }
+
+.button-contatti {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .foto-profilo {
+    max-width: 60vw;
+    margin: 24px auto 0 auto;
+    display: block;
+    position: static;
+  }
+
+  // Sezione Valori
+  .valori {
+    padding: 40px 12px;
+    margin-top: 80px;
+  }
+  .valori-title {
+    font-size: 24px;
+  }
+  .valori-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .piuma-bg {
+    display: none;
+  }
+
+  // Portfolio
+  .portfolio {
+    margin: 40px 12px;
+  }
+  .portfolio-text {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .portfolio-gallery,
+  .gallery {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .cornice-rom,
+  .cornice-s2i,
+  .cornice-vc,
+  .cornice-mb {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    flex-direction: column;
+  }
+  .cornice-rom img,
+  .cornice-s2i img,
+  .cornice-vc img,
+  .cornice-mb img {
+    min-height: 180px;
+    max-height: 220px;
+    object-fit: cover;
+  }
+  .cornice-rom-txt,
+  .cornice-s2i-txt,
+  .cornice-vc-txt,
+  .cornice-mb-txt {
+    font-size: 18px;
+    left: 16px;
+    bottom: 16px;
+  }
+  .paperplane-bg {
+    display: none;
+  }
+
+  // Software
+  .software {
+    margin: 40px 12px;
+  }
+  .software-text {
+    font-size: 16px;
+  }
+  .software-filter {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .logos {
+    gap: 18px;
+    margin: 40px 0 12px 0;
+  }
+  .logos img {
+    max-height: 48px;
+  }
+
+  // My bag
+  .my-bag {
+    margin: 40px 12px;
+  }
+  .bag {
+    margin-top: 60px;
+    max-width: 100%;
+  }
+  .mic,
+  .osmo,
+  .ipad,
+  .iphone,
+  .occhiali,
+  .libro {
+    position: static !important;
+    max-width: 80vw;
+    max-height: 120px;
+    margin: 12px auto;
+    display: block;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+  }
+  .tools-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tooltip-mic,
+  .tooltip-osmo,
+  .tooltip-ipad,
+  .tooltip-iphone,
+  .tooltip-occhiali,
+  .tooltip-libro {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    display: block;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .pencil-bg {
+    display: none;
+  }
+
+  // Contatti (già presente, ma puoi lasciare qui per chiarezza)
   .contatti {
     margin: 40px 12px;
   }
