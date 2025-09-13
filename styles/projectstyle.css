@@ -74,6 +74,7 @@ h3 {
 
 .breadcrumb a {
   text-decoration: none;
+  padding: 0px;
   color: #281515;
   transition: transform 0.3s ease-in-out;
 }
@@ -94,7 +95,7 @@ h3 {
   letter-spacing: 1px;
   line-height: 1.6;
   margin: 62px 220px;
-  text-align: center;
+  text-align: left;
 }
 
 .attività {
@@ -363,7 +364,44 @@ h3 {
   opacity: 0.6;
 }
 
+.copyright {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
 @media (max-width: 900px) {
+  body {
+    margin: 0 24px;
+  }
+  .breadcrumb {
+    margin-top: 20px;
+    left: 0px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .description {
+    margin: 40px 12px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .attività {
+    margin: 20px 12px;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
   .contatti {
     margin: 40px 12px;
   }
@@ -395,11 +433,11 @@ h3 {
   }
   .contatti-social {
     gap: 18px;
-    margin-top: 8px;
+    margin-top: 18px;
     justify-content: center;
   }
   .contatti-social img {
-    max-width: 36px;
+    max-width: 50px;
   }
   .form {
     max-width: 100%;
