@@ -270,7 +270,6 @@ h2 {
 
 .gallery { /* contenitore galleria portfolio per S2I e VC */
   display: flex;
-  flex-wrap: wrap;
   gap: 26px;
   justify-content: flex-start;
 }
@@ -884,6 +883,7 @@ h2 {
   gap: 30px;
   margin-top: 8px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contatti-social img {
@@ -1001,6 +1001,159 @@ h2 {
   font-size: 16px;
 }
 
+label[for]::after {
+  content: " *";
+  color: #B34245;
+}
+
+.form-message {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.form-message[style*=green] {
+  background: #e6fbe6;
+  color: #89A253;
+  border: 1px solid #89A253;
+}
+
+.form-message[style*=red] {
+  background: #ffeaea;
+  color: #b34245;
+  border: 1px solid #b34245;
+}
+
+@media (max-width: 1400px) {
+  .my-bag {
+    margin: 80px 40px;
+  }
+  .bag {
+    margin-top: 80px;
+    max-width: 40vw;
+    opacity: 50%;
+  }
+  .mic {
+    max-width: 80px;
+    z-index: 1;
+    top: 80px;
+    right: 320px;
+    rotate: 15deg;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .osmo {
+    max-width: 140px;
+    z-index: 1;
+    top: 320px;
+    left: 20px;
+    rotate: 5deg;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .ipad {
+    max-width: 220px;
+    z-index: 1;
+    bottom: 180px;
+    right: 50px;
+    rotate: 5deg;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .iphone {
+    max-height: 180px;
+    z-index: 1;
+    top: 70px;
+    left: 300px;
+    rotate: -5deg;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: transform 0.3s ease-in-out;
+  }
+  .iphone:hover {
+    transform: scale(1.05) rotate(-5deg);
+  }
+  .occhiali,
+  .libro {
+    display: none;
+  }
+  .tooltip-mic {
+    max-width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    color: #281515;
+    text-align: center;
+    font-family: "Sour Gummy", cursive;
+    line-height: 1.6;
+    font-size: 18px;
+    position: absolute;
+    right: 260px;
+    top: 220px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .tooltip-osmo {
+    max-width: 220px;
+    visibility: hidden;
+    opacity: 0;
+    color: #281515;
+    text-align: center;
+    font-family: "Sour Gummy", cursive;
+    line-height: 1.6;
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .tooltip-ipad {
+    max-width: 280px;
+    visibility: hidden;
+    opacity: 0;
+    color: #281515;
+    text-align: center;
+    font-family: "Sour Gummy", cursive;
+    line-height: 1.6;
+    font-size: 18px;
+    position: absolute;
+    right: 30px;
+    bottom: 80px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .tooltip-iphone {
+    max-width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    color: #281515;
+    text-align: center;
+    font-family: "Sour Gummy", cursive;
+    line-height: 1.6;
+    font-size: 18px;
+    position: absolute;
+    left: 240px;
+    top: 260px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .tooltip-occhiali,
+  .tooltip-libro {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .menu {
     font-size: 16px;
@@ -1069,6 +1222,7 @@ h2 {
   .portfolio-gallery,
   .gallery {
     gap: 18px;
+    flex-wrap: wrap;
   }
   .cornice-rom {
     width: 100%;
@@ -1254,11 +1408,6 @@ h2 {
   .tooltip-libro {
     display: none;
   }
-  .pencil-bg {
-    width: 220px;
-    margin-top: 60px;
-    left: -80px;
-  }
   .contatti {
     margin: 80px 40px;
   }
@@ -1299,6 +1448,11 @@ h2 {
   .condizioni-form {
     font-size: 13px;
     max-width: 100%;
+  }
+  .pencil-bg {
+    width: 220px;
+    margin-top: 60px;
+    left: -80px;
   }
   .logos {
     margin-top: 40px;
@@ -1369,6 +1523,12 @@ h2 {
     font-size: 16px;
     margin-bottom: 24px;
     text-align: left;
+  }
+  .portfolio-gallery,
+  .gallery {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .cornice-rom,
   .cornice-s2i,

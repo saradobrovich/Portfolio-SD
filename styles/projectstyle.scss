@@ -350,6 +350,34 @@ h3 {
   font-size: 16px;
 }
 
+label[for]::after {
+  content: " *";
+  color: $accentcolor;
+}
+
+.form-message {
+  @include font-text;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.form-message[style*="green"] {
+  background: #e6fbe6;
+  color: $greencolor;
+  border: 1px solid $greencolor;
+}
+
+.form-message[style*="red"] {
+  background: #ffeaea;
+  color: #b34245;
+  border: 1px solid #b34245;
+}
+
 // --- Media query mobile ----------------------------------------
 @media (max-width: 900px) {
   body {

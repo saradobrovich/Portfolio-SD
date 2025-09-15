@@ -372,6 +372,37 @@ h3 {
   font-size: 16px;
 }
 
+label[for]::after {
+  content: " *";
+  color: #B34245;
+}
+
+.form-message {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.form-message[style*=green] {
+  background: #e6fbe6;
+  color: #89A253;
+  border: 1px solid #89A253;
+}
+
+.form-message[style*=red] {
+  background: #ffeaea;
+  color: #b34245;
+  border: 1px solid #b34245;
+}
+
 @media (max-width: 900px) {
   body {
     margin: 0 24px;
