@@ -108,7 +108,7 @@ h3 {
 
 .description {
   @include font-text;
-  margin: 62px 220px;
+  margin: 20px 164px;
   text-align: left;
 }
 
@@ -116,7 +116,7 @@ h3 {
   display: flex;
   gap: 12px;
   justify-content: center;
-  margin: 60px;
+  margin: 80px 164px;
 }
 .attività button {
   font-family: $fonttext;
@@ -149,7 +149,7 @@ h3 {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 40px 0;
+  margin: 40px 80px;
 }
 
 .card {
@@ -217,7 +217,7 @@ h3 {
   min-width: 0;
 }
 .contatti-title {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-top: 0px;
   position: relative;
   align-self: center;
