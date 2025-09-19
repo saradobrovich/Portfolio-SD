@@ -1,3 +1,9 @@
+  .valori-text {
+    padding: 0 16px;
+    max-width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
 // --- Variabili colori e font ---
 $bgcolor: #fef6f0;
 $accentcolor: #B34245;
@@ -1547,11 +1553,12 @@ label[for]::after {
   .cornice-s2i img,
   .cornice-vc img,
   .cornice-mb img {
-    height: 220px;
-    width: 100%;
-    max-width: 100%;
-    left: 0;
-    object-fit: cover;
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+     min-height: 180px;
+     object-fit: cover;
+     display: block;
   }
   .cornice-rom-txt,
   .cornice-s2i-txt,
