@@ -1548,7 +1548,8 @@ label[for]::after {
   .cornice-vc img,
   .cornice-mb img {
     height: 220px;
-    width: 460px;
+    width: 100%;
+    max-width: 100%;
     left: 0;
     object-fit: cover;
   }
