@@ -1504,7 +1504,6 @@ label[for]::after {
   // Valori
   .valori {
     padding: 40px 0px;
-    margin: 0px 12px;
     margin-top: 80px;
   }
   .valori-title {
@@ -1537,7 +1536,7 @@ label[for]::after {
     gap: 18px;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px 50px;
+    padding: 0px 80px;
   }
   .cornice-rom,
   .cornice-s2i,
