@@ -1516,7 +1516,7 @@ label[for]::after {
   }
   .valori-text {
     font-size: 16px;
-    max-width: 100%;
+    max-width: 300px;
   }
   .piuma-bg {
     display: none;
@@ -1537,7 +1537,7 @@ label[for]::after {
     gap: 18px;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px 30px;
+    margin: 0px 50px;
   }
   .cornice-rom,
   .cornice-s2i,
