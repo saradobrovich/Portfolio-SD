@@ -1536,7 +1536,7 @@ label[for]::after {
     gap: 18px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 80px;
+    padding: 0px 40px;
   }
   .cornice-rom,
   .cornice-s2i,

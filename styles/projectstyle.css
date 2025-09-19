@@ -61,6 +61,11 @@ h3 {
   margin-top: -35px;
 }
 
+ol.breadcrumb {
+  padding: 0;
+  margin: 20px 164px;
+}
+
 .breadcrumb {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -70,12 +75,19 @@ h3 {
   font-size: 18px;
   width: 100vw;
   list-style: none;
+  text-align: left;
+  position: relative;
+  justify-content: flex-start;
+  margin-left: 0;
 }
 
 .breadcrumb a {
   text-decoration: none;
   padding: 0px;
   color: #281515;
+  text-align: left;
+  position: relative;
+  justify-content: flex-start;
   transition: transform 0.3s ease-in-out;
 }
 .breadcrumb a:hover {
@@ -247,6 +259,7 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .contatti-social {

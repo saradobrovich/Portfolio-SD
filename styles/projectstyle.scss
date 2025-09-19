@@ -81,18 +81,30 @@ h3 {
 }
 
 // --- Breadcrumb --------------------------------------------------------
+ol.breadcrumb {
+  padding: 0;
+  margin: 20px 164px;
+}
+
 .breadcrumb {
   @include font-text;
   display: flex;
   font-size: 18px;
   width: 100vw;
   list-style: none;
+  text-align: left;
+  position: relative;
+  justify-content: flex-start;
+  margin-left: 0;
 }
 
 .breadcrumb a {
   text-decoration: none;
   padding: 0px;
   color: $textcolor;
+  text-align: left;
+  position: relative;
+  justify-content: flex-start;
   transition: transform 0.3s ease-in-out;
   &:hover {
     color: $accentcolor;
