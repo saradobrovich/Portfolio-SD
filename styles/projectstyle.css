@@ -63,7 +63,7 @@ h3 {
 
 ol.breadcrumb {
   padding: 0;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .breadcrumb {
@@ -72,7 +72,7 @@ ol.breadcrumb {
   letter-spacing: 1px;
   line-height: 1.6;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   width: 100vw;
   list-style: none;
   text-align: left;
