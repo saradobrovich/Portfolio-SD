@@ -1,3 +1,14 @@
+// Chiudi menu mobile se la finestra supera i 900px
+window.addEventListener('resize', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (window.innerWidth > 900 && mobileMenu && hamburger) {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', false);
+    mobileMenu.setAttribute('aria-hidden', true);
+  }
+});
 // form.js
 
 // Inizializza EmailJS con la tua Public Key

@@ -67,9 +67,6 @@ html {
     border-radius: 2px;
     transition: all 0.3s;
   }
-.hamburger.active .hamburger-container {
-  border-bottom: none;
-}
 
 .hamburger.active .hamburger-bar:nth-child(1) {
   transform: translateY(12px) rotate(45deg);
