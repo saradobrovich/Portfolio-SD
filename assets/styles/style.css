@@ -13,7 +13,7 @@ html {
 .hamburger-container {
   display: none;
   background: #fef6f0;
-  padding: 42px 500px 60px 22px;
+  padding: 42px 900px 60px 22px;
   z-index: 100;
   position: fixed;
   top: -20px;
