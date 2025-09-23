@@ -32,6 +32,99 @@ html {
   scroll-behavior: smooth;
 }
 
+// --- Hamburger menu ---------------------------------------------------
+.hamburger-container {
+  display: none;
+  background: $bgcolor;
+  padding: 42px 500px 60px 22px;
+  z-index: 100;
+  position: fixed;
+  top: -20px;
+  left: 0;
+  border-bottom: 3px solid #B34246;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 200;
+}
+  .hamburger-bar {
+    z-index: 300;
+    width: 30px;
+    height: 4px;
+    background: #B34245;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+.hamburger.active .hamburger-container {
+  border-bottom: none;
+}
+
+.hamburger.active .hamburger-bar:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+  opacity: 1;
+}
+.hamburger.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .hamburger-bar:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+  opacity: 1;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 30vh;
+  background: $bgcolor;
+  border-bottom: 3px solid $accentcolor;
+  z-index: 150;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  top: 60px;
+  left: 0px;
+  padding: 40px 40px 20px 40px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-30px);
+  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .menu-link {
+    font-size: 1.5rem;
+    color: $accentcolor;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    &:hover { text-decoration: underline 2px; }
+  }
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    display: flex; // se serve
+  }
+}
 
 // --- Navigazione -----------------------------------------------------------
 .menu {
@@ -519,7 +612,8 @@ h2 {
 
 .software-app {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
+  padding: 40px 10px;
 }
 
 // --- Filtri app --------------------------------------------------------
@@ -984,6 +1078,7 @@ label[for]::after {
   color: #b34245;
   border: 1px solid #b34245;
 }
+
 // --- Media query mobile ---------------------------------------
 @media (max-width: 1400px) {
   // My bag
@@ -1044,7 +1139,10 @@ label[for]::after {
   }
 }
 
-.occhiali,
+.occhiali {
+  display: none;
+}
+
 .libro {
   display: none;
 }
@@ -1318,7 +1416,10 @@ label[for]::after {
   }
 }
 
-.occhiali,
+.occhiali {
+  display: none;
+}
+
 .libro {
   display: none;
 }
@@ -1419,6 +1520,10 @@ label[for]::after {
     max-width: 45vw;
     font-size: 16px;
   }
+  .form {
+    max-width: 100%;
+    font-size: 16px;
+  }
   .form-control {
     font-size: 16px;
     padding: 10px 12px;
@@ -1453,13 +1558,9 @@ label[for]::after {
 
 @media (max-width: 900px) {
   // Navigazione
-  .menu {
-    font-size: 16px;
-    left: 0;
-    gap: 24px;
-    padding: 24px 0;
-    border-bottom-width: 2px;
-  }
+  .menu { display: none !important; }
+  .hamburger-container { display: block; }
+  .hamburger { display: flex; }
 
   // Titoli
   h1 {
@@ -1655,3 +1756,5 @@ label[for]::after {
     font-size: 12px;
   }
 }
+
+
