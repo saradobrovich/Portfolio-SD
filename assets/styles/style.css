@@ -162,6 +162,7 @@ h1 {
   letter-spacing: 1px;
   max-width: 60vw;
   line-height: 1.2;
+  margin-right: 650px;
 }
 
 h2 {
@@ -1584,6 +1585,8 @@ label[for]::after {
     font-size: 38px;
     text-align: left;
     margin-bottom: 16px;
+    margin-right: 0;
+    padding: 0 30px;
   }
   h2 {
     font-size: 32px;
@@ -1614,11 +1617,26 @@ label[for]::after {
   }
   .valori-title {
     font-size: 24px;
-    text-align: center;
+    text-align: left;
+    padding-left: 30px;
   }
   .valori-text {
     font-size: 16px;
-    max-width: 300px;
+    margin: 0;
+    padding: 0px 30px;
+    text-align: left;
+  }
+  .link-yt {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0px 30px;
+    text-align: left;
+  }
+  .yt-container {
+    margin-top: 24px;
+    gap: 12px;
+    justify-content: flex-start;
+    padding: 0px 30px;
   }
   .piuma-bg {
     display: none;
@@ -1713,22 +1731,22 @@ label[for]::after {
   .contatti-title {
     font-size: 32px;
     margin-bottom: 32px;
-    text-align: center;
+    text-align: left;
   }
   .contatti-text {
     font-size: 16px;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .social {
     margin-top: 32px;
-    align-items: center;
+    align-items: left;
     font-size: 16px;
   }
   .contatti-social {
     gap: 18px;
     margin-top: 16px;
-    justify-content: center;
+    justify-content: left;
   }
   .contatti-social img {
     max-width: 50px;
@@ -1736,6 +1754,7 @@ label[for]::after {
   .form {
     max-width: 100%;
     font-size: 16px;
+    align-items: left;
   }
   .form-control {
     font-size: 16px;
