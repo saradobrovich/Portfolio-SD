@@ -178,6 +178,7 @@ h1 {
   position: relative;
   letter-spacing: 1px;
   max-width: 60vw;
+  line-height: 1.2;
 }
 h2 {
   font-family: $fonttitle;
@@ -192,7 +193,7 @@ h2 {
 .chi-sono { /* contenitore chi sono */
   position: relative;
   margin: 120px 164px;
-  margin-top: 240px;
+  margin-top: 180px;
 }
 
 .chi-sono-text {
@@ -215,7 +216,7 @@ h2 {
 .foto-profilo {
   z-index: -1;
   border-radius: 24px;
-  margin-top: -280px;
+  margin-top: -260px;
   position: absolute;
   max-height: 700px;
   max-width: 40vw;    // larghezza massima 80% viewport
